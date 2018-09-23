@@ -4,6 +4,9 @@
     <!-- Bootstrap CSS Stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
+    <link rel="stylesheet" href="bootstrap-social/bootstrap-social.less">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="scripts.js"></script>
 </head>
 
@@ -13,7 +16,7 @@
         <!-- Jumbotron -->
         <div class="jumbotron jumbotron-fluid">
             
-        <nav class="navbar navbar-expand-lg navbar-light mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark mb-5">
                 <div class="container justify-content-end">
                     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -39,10 +42,10 @@
         </nav>
             <div class="container mb-5 mt-5">
                 <div class="row align-items-center justify-content-center">
-                    <h1 class="display-2 mt-5 text-center">INDUSTRY 4.0</h1>
+                    <h1 class="display-1 mt-5 text-center text-white">INDUSTRY 4.0</h1>
                 </div>
                 <div class="row align-items-center justify-content-center m-2">
-                    <p class="lead text-center">Data-Driven Competition by the University of Waterloo - Management Engineering</p>
+                    <p class="lead text-center text-white">Data-Driven Competition by the University of Waterloo - Management Engineering</p>
                 </div>
                 <div class="row align-items-center justify-content-center">
                     <button class="btn btn-primary" type="button">SIGN UP</button>
@@ -51,48 +54,206 @@
         </div>
         <!-- End of Jumbotron -->
 
-        <!-- Interested in Participating-->
+        <!--Countdown Timer-->
         <div class="container-fluid mt-5 mb-5 justify-content-center">
-            <div class="row m-3 justify-content-center">
-                <h3>COUNTDOWN TO COMPETITION</h3>
+                <div class="container p-5 shadow bg-white rounded">
+                        <div class="row m-3 justify-content-center">
+                                <h3 class="text-center">COUNTDOWN TO COMPETITION</h3>
+                            </div>
+                
+                            <!-- Countdown Timer -->
+                            <div class="d-flex flex-wrap flex-row justify-content-center">
+                                <div class="p-4">
+                                    <p class="lead text-center" id="days"></p>
+                                    <p class="lead text-center">Days</p>
+                                </div> 
+                                <div class="p-4">
+                                        <p class="lead text-center" id="hours"></p>
+                                        <p class="lead text-center">Hours</p>
+                                </div>
+                                <div class="p-4">
+                                        <p class="lead text-center" id="minutes"></p>
+                                        <p class="lead text-center">Minutes</p>
+                                </div>
+                                <div class="p-4">
+                                        <p class="lead text-center" id="seconds"></p>
+                                        <p class="lead text-center">Seconds</p>
+                                </div>
+                            </div>
+                </div>
             </div>
-
-            <!-- Countdown Timer -->
-            <div class="d-flex flex-wrap flex-row justify-content-center">
-                <div class="p-4">
-                    <p class="lead text-center" id="days"></p>
-                    <p class="lead text-center">Days</p>
-                </div> 
-                <div class="p-4">
-                        <p class="lead text-center" id="hours"></p>
-                        <p class="lead text-center">Hours</p>
-                </div>
-                <div class="p-4">
-                        <p class="lead text-center" id="minutes"></p>
-                        <p class="lead text-center">Minutes</p>
-                </div>
-                <div class="p-4">
-                        <p class="lead text-center" id="seconds"></p>
-                        <p class="lead text-center">Seconds</p>
-                </div>
-            </div>
-            
-        </div>
+    
 
         <!--About the I4 Challenge-->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <h4>ABOUT THE I4 CHALLENGE</h1>
-                    <p class="lead">Description of Industry4.0</p>
+        <div class="container-fluid mt-5 mb-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col">
+                        <h4 class="text-center p-2">ABOUT THE I4 CHALLENGE</h1>
+                        <p class="lead m-3">Industry 4.0 is a high school level data-driven competition run by students at the University of Waterloo. The name comes from what is known as the fourth industrial revolution, involving the computerization of manufacturing and increase in big data and analytics. The idea for this competition first came in 2017, and the first competition will be run in the winter of 2019.</p>
+                    </div>
+                    <div class="col" id="col_image">
+                        <img src="images/feliphe-schiarolli-444217-unsplash.jpg" class="img-fluid">
+                    </div>
                 </div>
-                <div class="col">
-                    <img src="images/feliphe-schiarolli-444217-unsplash.jpg" class="img-fluid">
+            </div>
+            <!--End of About the I4 Challenge-->
+
+        <!--IMAGE -->
+        <div class="container-fluid" id="fluidimage">
+            <div class="row justify-content-center pt-5">
+                <h1 class="display-4 text-white mt-5 pt-5 pb-2 text-center">Interested in Sponsoring?</h1>
+            </div>
+            <div class="row justify-content-center pb-5">
+                    <button class="btn btn-primary mb-5 text-center">GET INVOLVED</button>
+            </div>
+        </div>
+        <!-- End of Jumbotron 2 -->
+    
+        <!-- FAQ ACCORDION-->
+        <div class="container justify-content-center pt-5 pb-5">
+            <div class="row justify-content-center">
+                <h1 class="display-4 text-center">FAQ</h1>
+            </div>
+
+            <div id="accordion" role="tablist">
+                <!--COLLAPSE 1 -->
+                <div class="card mb-2 bg-white shadow">
+                    <div class="card-header" role="tab" id="heading">
+                        <h5 class="mb-0"><a href="#collapse1" data-parent="#accordion" data-toggle="collapse" class="text-dark">I’m a high school student, how do I sign up?</a></h5>
+                    </div>
+                    <div id="collapse1" class="collapse">
+                        <div class="card-body">
+                                If you’re interested in signing up for the competition, first get in touch with a teacher who would be willing to act as your advisor and then sign up here.
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- COLLAPSE 2 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse2" data-parent="#accordion" data-toggle="collapse" class="text-dark">I’m a teacher, how do I sign up a team of students?</a></h5>
+                        </div>
+                        <div id="collapse2" class="collapse">
+                            <div class="card-body">
+                                Please go to the sign up page and follow the instructions there.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 3 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse3" data-parent="#accordion" data-toggle="collapse" class="text-dark">My company is interested in sponsoring this competition, how do we go about that?</a></h5>
+                        </div>
+                        <div id="collapse3" class="collapse">
+                            <div class="card-body">
+                                    Please go to the Get Involved page (link) and follow the information there. We are currently looking for sponsors in the form of money, and advisors.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 4 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse4" data-parent="#accordion" data-toggle="collapse" class="text-dark">When is the competition?</a></h5>
+                        </div>
+                        <div id="collapse4" class="collapse">
+                            <div class="card-body">
+                                    The inaugural I4 competition will be held in Winter 2019, the exact date is still to be determined. Current plan is set course for March 2019.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 5 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse5" data-parent="#accordion" data-toggle="collapse" class="text-dark">Is there a prize?</a></h5>
+                        </div>
+                        <div id="collapse5" class="collapse">
+                            <div class="card-body">
+                                    Currently we are aiming for 3 prizes for the top 3 teams. The prize will consist of scholarships to The University of Waterloo for all team members, money for a STEM based team from your high school, and money for your high school in general.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 6 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse6" data-parent="#accordion" data-toggle="collapse" class="text-dark">What skills will I gain from this competition?</a></h5>
+                        </div>
+                        <div id="collapse6" class="collapse">
+                            <div class="card-body">
+                                    This competition focuses on building your problem solving, analytical, excel, and data analysis skills. The competition focuses on process improvement through data analytics which will give you many skills that are applicable in your future - especially if you want to do Engineering.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 7 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse7" data-parent="#accordion" data-toggle="collapse" class="text-dark">Do I need to be in a certain grade to sign up?</a></h5>
+                        </div>
+                        <div id="collapse7" class="collapse">
+                            <div class="card-body">
+                                    The competition is currently geared towards students in grade 11, however we are open to having students in any grade sign up.
+                            </div>
+                        </div>
+                </div>
+
+                <!-- COLLAPSE 8 -->
+                <div class="card mb-2 bg-white shadow">
+                        <div class="card-header" role="tab" id="heading">
+                            <h5 class="mb-0"><a href="#collapse8" data-parent="#accordion" data-toggle="collapse" class="text-dark">What is management engineering?</a></h5>
+                        </div>
+                        <div id="collapse8" class="collapse">
+                            <div class="card-body">
+                                    Management Engineering program is the study, analysis, and improvement of complex systems – improving both effectiveness and efficiency..
+                            </div>
+                        </div>
                 </div>
             </div>
         </div>
 
+
+        
+
+        <!-- Our Team -->
+        <br>
+        <br>
+        
+
         <!-- End of I4 Challenge -->
+
+        <!-- Our Sponsors -->
+       
+
+
+
+        <!-- End of Our Sponsors -->
+
+
+        <!-- Footer -->
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="p-4 item-hl">
+                    <p class="lead">Contact Us</p>
+                    <p class="leadr">About Us</p>
+                        
+                </div>
+                <div class="p-4 item-hl">
+                        <ul class="social-icons">
+
+                                <li><a href="https://www.facebook.com/Industry4.0Team/" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                                <li><a href="https://www.linkedin.com/company/industry-4-0-design-team/" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="https://medium.com/@industry4team" class="social-icon"> <i class="fa fa-medium"></i></a></li>
+                    
+                        </ul>
+                </div>
+            </div>
+
+        </div>
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
