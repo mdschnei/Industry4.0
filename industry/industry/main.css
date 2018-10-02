@@ -1,3 +1,33 @@
+
+    #body_change
+    {
+        font-family: 'Barlow Condensed';
+        letter-spacing: 1.5px;
+    }
+
+    #headerBF
+    {
+        border-top: 2px solid rgb(94,73,129);
+        border-bottom: 2px solid rgb(94,73,129);
+        color: #8250A7;
+        border-radius: 18px;
+      }
+
+    #fontColour
+    {
+        color: #8250A7;
+        letter-spacing: 3px;
+    }
+
+    #clockdiv 
+    {
+        border-radius: 2px;
+        border-left: 2px solid rgb(94,73,129);
+        border-right: 2px solid rgb(94,73,129);
+        border-radius: 10px;
+    }
+
+
 .jumbotron {
     background-image: url("images/hd-wallpaper-mountain-range-mountains-114979.jpg");
     margin-bottom: 0;
