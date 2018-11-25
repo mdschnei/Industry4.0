@@ -1,5 +1,12 @@
 
-    #body_change
+
+    @media (max-width: 500px){
+        html{
+            font-size: 0.9rem;
+        }
+    }
+
+    html
     {
         font-family: 'Barlow Condensed';
         letter-spacing: 1.5px;
