@@ -1,7 +1,7 @@
 /*COUNTDOWN TIMER FOR COMPETITION */
 
 //Competition Date - Enter new date if changed
-var countDownDate = new Date("Mar 1, 2019 00:00:00").getTime();
+var countDownDate = new Date("Feb 8, 2019 00:00:00").getTime();
 
 //Update the count down every 1 second
 var x = setInterval(function(){
