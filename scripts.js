@@ -13,10 +13,10 @@ var x = setInterval(function(){
     var distance = countDownDate - now;
 
     //Time Calc for Days, Hours, Minutes, and Seconds
-    var days = Math.floor(distance/(1000*60*60*24));
-    var hours = Math.floor((distance%(1000*60*60*24))/(1000*60*60));
-    var minutes = Math.floor((distance%(1000*60*60))/(1000*60));
-    var seconds = Math.floor((distance%(1000*60))/1000);
+    var days = 0;
+    var hours = 0;
+    var minutes = 0;
+    var seconds = 0;
 
     //Display the result in the element with id="countdown_timer"
     document.getElementById("days").innerHTML = days;
